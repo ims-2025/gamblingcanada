@@ -1,7 +1,7 @@
 import Link from 'next/link';
-import Image from 'next/image';
 import type { Operator } from '@/lib/operators';
 import { StarRating } from './icons';
+import LogoImage from './LogoImage';
 
 export default function OperatorCard({ op, rank, priority = false }: { op: Operator; rank: number; priority?: boolean }) {
   const top = rank === 1;
@@ -13,15 +13,7 @@ export default function OperatorCard({ op, rank, priority = false }: { op: Opera
       </div>
 
       <div className="op-logo">
-        <Image
-          src={`/logos/${op.slug}.svg`}
-          alt={`${op.name} logo`}
-          width={84}
-          height={84}
-          priority={priority}
-          loading={priority ? undefined : 'lazy'}
-          unoptimized
-        />
+        <LogoImage slug={op.slug} name={op.name} size={84} />
       </div>
 
       <div className="op-body">

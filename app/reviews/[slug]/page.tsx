@@ -1,8 +1,8 @@
 import type { Metadata } from 'next';
-import Image from 'next/image';
 import { notFound } from 'next/navigation';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import JsonLd from '@/components/JsonLd';
+import LogoImage from '@/components/LogoImage';
 import { StarRating, Check } from '@/components/icons';
 import { OPERATORS, getOperator } from '@/lib/operators';
 import { SITE } from '@/lib/site';
@@ -50,7 +50,7 @@ export default function ReviewPage({ params }: { params: { slug: string } }) {
         <div className="container">
           <div className="card review-hero">
             <div className="op-logo">
-              <Image src={`/logos/${op.slug}.svg`} alt={`${op.name} logo`} width={112} height={112} priority unoptimized />
+              <LogoImage slug={op.slug} name={op.name} size={112} />
             </div>
             <div>
               <div className="badge badge-blue mb-2">{typeLabel}</div>
