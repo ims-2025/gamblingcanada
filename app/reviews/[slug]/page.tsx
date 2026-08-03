@@ -50,7 +50,7 @@ export default function ReviewPage({ params }: { params: { slug: string } }) {
         <div className="container">
           <div className="card review-hero">
             <div className="op-logo">
-              <Image src={op.logo} alt={`${op.name} logo`} width={112} height={112} priority unoptimized />
+              <Image src={`/logos/${op.slug}.svg`} alt={`${op.name} logo`} width={112} height={112} priority unoptimized />
             </div>
             <div>
               <div className="badge badge-blue mb-2">{typeLabel}</div>

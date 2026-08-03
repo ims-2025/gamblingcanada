@@ -14,7 +14,7 @@ export default function OperatorCard({ op, rank, priority = false }: { op: Opera
 
       <div className="op-logo">
         <Image
-          src={op.logo}
+          src={`/logos/${op.slug}.svg`}
           alt={`${op.name} logo`}
           width={84}
           height={84}
