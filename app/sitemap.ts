@@ -1,7 +1,8 @@
 import type { MetadataRoute } from 'next';
 import { SITE } from '@/lib/site';
 import { OPERATORS } from '@/lib/operators';
-import { GAMES, NEWS } from '@/lib/content';
+import { GAMES } from '@/lib/content';
+import { getAllNews } from '@/lib/news';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = SITE.url;
@@ -42,7 +43,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.6,
   }));
 
-  const newsPages = NEWS.map((n) => ({
+  const newsPages = getAllNews().map((n) => ({
     url: `${base}/news/${n.slug}`,
     lastModified: new Date(n.date),
     changeFrequency: 'monthly' as const,

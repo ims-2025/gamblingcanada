@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import Breadcrumbs from '@/components/Breadcrumbs';
-import { NEWS } from '@/lib/content';
+import { getAllNews } from '@/lib/news';
 
 export const metadata: Metadata = {
   title: 'Canadian Online Gambling News & Market Updates',
@@ -11,6 +11,7 @@ export const metadata: Metadata = {
 };
 
 export default function NewsPage() {
+  const news = getAllNews();
   return (
     <>
       <Breadcrumbs items={[{ label: 'News' }]} />
@@ -24,7 +25,7 @@ export default function NewsPage() {
             </p>
           </div>
           <div className="grid grid-3">
-            {NEWS.map((n) => (
+            {news.map((n) => (
               <article key={n.slug} className="news-card">
                 <div className="news-body">
                   <span className="badge badge-blue">{n.category}</span>

@@ -5,7 +5,8 @@ import JsonLd from '@/components/JsonLd';
 import { Check, ShieldCheck, Scale, Users } from '@/components/icons';
 import { SITE } from '@/lib/site';
 import { CASINOS, SPORTSBOOKS, topByRating } from '@/lib/operators';
-import { RANKING_CRITERIA, HOME_FAQ, GAMES, NEWS, EDITORS } from '@/lib/content';
+import { RANKING_CRITERIA, HOME_FAQ, GAMES, EDITORS } from '@/lib/content';
+import { getAllNews } from '@/lib/news';
 
 export const metadata: Metadata = {
   title: `${SITE.name} — Sportsbooks & Online Casinos Canada 2025`,
@@ -16,6 +17,7 @@ export const metadata: Metadata = {
 export default function HomePage() {
   const topCasinos = topByRating(CASINOS, 5);
   const topSportsbooks = topByRating(SPORTSBOOKS, 5);
+  const latestNews = getAllNews().slice(0, 6);
 
   const faqSchema = {
     '@context': 'https://schema.org',
@@ -223,7 +225,7 @@ export default function HomePage() {
             <h2>Canadian Gambling News</h2>
           </div>
           <div className="grid grid-3">
-            {NEWS.slice(0, 6).map((n) => (
+            {latestNews.map((n) => (
               <article key={n.slug} className="news-card">
                 <div className="news-body">
                   <span className="badge badge-blue">{n.category}</span>
