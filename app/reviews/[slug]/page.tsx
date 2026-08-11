@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import JsonLd from '@/components/JsonLd';
@@ -62,9 +63,15 @@ export default function ReviewPage({ params }: { params: { slug: string } }) {
               <p className="op-bonus mt-1" style={{ marginBottom: 0 }}>{op.bonus}</p>
             </div>
             <div className="rev-cta flex" style={{ flexDirection: 'column', gap: 10 }}>
-              <a className="btn btn-primary" href={op.playUrl} target="_blank" rel="nofollow sponsored noopener">
-                Play at {op.name}
-              </a>
+              {op.playUrl.startsWith('http') ? (
+                <a className="btn btn-primary" href={op.playUrl} target="_blank" rel="nofollow sponsored noopener">
+                  Play at {op.name}
+                </a>
+              ) : (
+                <Link className="btn btn-primary" href="/casino">
+                  See top-rated casinos
+                </Link>
+              )}
               <span className="text-muted" style={{ fontSize: '0.8rem', textAlign: 'center' }}>
                 19+ • Play responsibly
               </span>
@@ -101,6 +108,8 @@ export default function ReviewPage({ params }: { params: { slug: string } }) {
               )}
             </div>
           )}
+
+          {op.reviewBody && <div dangerouslySetInnerHTML={{ __html: op.reviewBody }} />}
 
           <h2>{op.name} at a glance</h2>
           <table className="info-table">

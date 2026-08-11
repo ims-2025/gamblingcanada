@@ -11,6 +11,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const staticPages = [
     '',
     '/casino',
+    '/best-mobile-casinos-in-canada',
+    '/ontario-casino-apps',
+    '/top-10-most-searched-online-casino-games-in-canada',
     '/sports-betting',
     '/sports-betting/ontario',
     '/sports-betting/alberta',
