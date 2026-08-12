@@ -9,7 +9,9 @@ export const metadata: Metadata = {
   metadataBase: new URL(SITE.url),
   title: {
     default: `${SITE.name} — ${SITE.tagline}`,
-    template: `%s | ${SITE.name}`,
+    // No brand suffix on inner pages — titles are already descriptive and this
+    // keeps them under Google's ~60-char display limit (avoids SERP truncation).
+    template: '%s',
   },
   description: SITE.description,
   applicationName: SITE.name,

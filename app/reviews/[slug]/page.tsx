@@ -51,7 +51,7 @@ export default function ReviewPage({ params }: { params: { slug: string } }) {
         <div className="container">
           <div className="card review-hero">
             <div className="op-logo">
-              <LogoImage slug={op.slug} name={op.name} size={112} />
+              <LogoImage slug={op.slug} name={op.name} size={112} src={op.logo} />
             </div>
             <div>
               <div className="badge badge-blue mb-2">{typeLabel}</div>
@@ -157,6 +157,29 @@ export default function ReviewPage({ params }: { params: { slug: string } }) {
           <p className="flex items-center gap-2" style={{ color: 'var(--green)', fontWeight: 700 }}>
             <Check /> Licence verified by our review team
           </p>
+
+          {!op.reviewBody && (
+            <>
+              <h2>How we review {op.name}</h2>
+              <p>
+                Every operator on {SITE.name} is assessed against the same six criteria: security and licensing,
+                customer support, game or market content, promotions and bonuses, banking and withdrawal speed, and
+                overall user experience. We create a real account, test deposits and withdrawals in Canadian
+                dollars, read the bonus terms in full and confirm the licence before publishing. Our ratings are
+                editorially independent and are never paid for.
+              </p>
+              <p>
+                Not sure {op.name} is right for you? Compare it against our{' '}
+                {op.type === 'sportsbook' ? (
+                  <Link href="/sports-betting">best Canadian sportsbooks</Link>
+                ) : (
+                  <Link href="/casino">best online casinos in Canada</Link>
+                )}
+                , browse all our <Link href="/reviews">operator reviews</Link>, or read the{' '}
+                <Link href="/about">criteria behind every rating</Link>.
+              </p>
+            </>
+          )}
 
           <div className="disclosure mt-2">
             Advertising disclosure: we may earn a commission if you sign up through our link. This never affects

@@ -13,7 +13,7 @@ export default function OperatorCard({ op, rank, priority = false }: { op: Opera
       </div>
 
       <div className="op-logo">
-        <LogoImage slug={op.slug} name={op.name} size={84} />
+        <LogoImage slug={op.slug} name={op.name} size={84} src={op.logo} />
       </div>
 
       <div className="op-body">
