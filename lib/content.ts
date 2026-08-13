@@ -1,3 +1,5 @@
+import { YEAR } from './site';
+
 export interface Game {
   slug: string;
   name: string;
@@ -40,7 +42,7 @@ export const GAMES: Game[] = [
   {
     slug: 'poker',
     name: 'Poker',
-    title: 'Best Online Poker Sites in Canada 2025',
+    title: `Best Online Poker Sites in Canada ${YEAR}`,
     excerpt: 'A game of skill against other players. Find soft cash games, big tournaments and Ontario-regulated rooms.',
     difficulty: 'Hard',
     icon: '♠️',
@@ -57,7 +59,7 @@ export const GAMES: Game[] = [
   {
     slug: 'bingo',
     name: 'Bingo',
-    title: 'Best Online Bingo Sites for Canadians 2025',
+    title: `Best Online Bingo Sites for Canadians ${YEAR}`,
     excerpt: 'A social, low-stakes favourite. Discover the best rooms, chat games and jackpot bingo for Canadians.',
     difficulty: 'Easy',
     icon: '🔵',

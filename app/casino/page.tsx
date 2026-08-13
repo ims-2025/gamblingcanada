@@ -1,12 +1,14 @@
 import type { Metadata } from 'next';
+import Link from 'next/link';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import OperatorCard from '@/components/OperatorCard';
 import { CASINOS, topByRating } from '@/lib/operators';
+import { YEAR } from '@/lib/site';
 
 export const metadata: Metadata = {
-  title: 'Best Real Money Online Casinos in Canada 2025',
+  title: `Best Real Money Online Casinos in Canada ${YEAR}`,
   description:
-    'Compare the best real-money online casinos in Canada. Expert-rated for licensing, bonuses, game selection, payout speed and mobile play. Updated for 2025.',
+    'Compare the best real-money online casinos in Canada, expert-rated for licensing, bonuses, game selection, payout speed and mobile play.',
   alternates: { canonical: '/casino' },
 };
 
@@ -50,7 +52,7 @@ export default function CasinoPage() {
             <p className="lead text-muted">
               Playing at online casinos has become a favourite pastime for Canadians. With so many sites
               available, choosing the right one is hard — so our editors have done the work. Here are the
-              top-rated real-money casinos for Canadian players, updated for 2025.
+              top-rated real-money casinos for Canadian players, updated for {YEAR}.
             </p>
           </div>
           <div className="disclosure mb-2">
@@ -85,6 +87,23 @@ export default function CasinoPage() {
       </section>
 
       <section className="section">
+        <div className="container">
+          <div className="section-head">
+            <h2>Popular casino guides</h2>
+            <p className="text-muted">Go deeper on bonuses, banking, provinces and more.</p>
+          </div>
+          <div className="grid grid-3">
+            <Link href="/online-casinos-ontario" className="feature"><h3>Ontario Casinos</h3><p>Best regulated casinos for Ontario players.</p></Link>
+            <Link href="/online-casinos-alberta" className="feature"><h3>Alberta Casinos</h3><p>Top online casinos for Alberta players.</p></Link>
+            <Link href="/casino-bonuses" className="feature"><h3>Casino Bonuses</h3><p>Best offers and how to read the terms.</p></Link>
+            <Link href="/no-deposit-bonus-canada" className="feature"><h3>No Deposit Bonuses</h3><p>Free bonuses with no deposit required.</p></Link>
+            <Link href="/interac-casinos" className="feature"><h3>Interac Casinos</h3><p>Canada’s favourite casino payment method.</p></Link>
+            <Link href="/fastest-payout-casinos" className="feature"><h3>Fastest Payout Casinos</h3><p>Get your winnings quickly — speed tested.</p></Link>
+          </div>
+        </div>
+      </section>
+
+      <section className="section bg-soft">
         <div className="container prose">
           <h2>Online casinos in Canada: what to expect</h2>
           <p>

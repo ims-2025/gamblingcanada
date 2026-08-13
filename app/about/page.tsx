@@ -7,7 +7,7 @@ import { SITE } from '@/lib/site';
 export const metadata: Metadata = {
   title: 'About Us — Independent Canadian Gambling Experts',
   description:
-    'For over a decade, OnlineGamblingCanada.com has published independent casino reviews, sportsbook ratings and gambling news to keep Canadian players safe and informed.',
+    'For over a decade, OnlineGamblingCanada.com has published independent casino reviews, sportsbook ratings and gambling news for Canadian players.',
   alternates: { canonical: '/about' },
 };
 

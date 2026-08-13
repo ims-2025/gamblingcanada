@@ -15,14 +15,8 @@ export const metadata: Metadata = {
   },
   description: SITE.description,
   applicationName: SITE.name,
-  keywords: [
-    'online gambling canada',
-    'online casino canada',
-    'sports betting canada',
-    'best canadian casinos',
-    'casino bonuses canada',
-    'legal online betting canada',
-  ],
+  // (meta keywords intentionally omitted — ignored by search engines and an
+  // identical tag across every page is a faint low-quality signal.)
   alternates: { canonical: '/' },
   openGraph: {
     type: 'website',

@@ -7,7 +7,7 @@ import { OPERATORS, topByRating } from '@/lib/operators';
 export const metadata: Metadata = {
   title: 'Crypto Gambling in Canada — Best Bitcoin Casinos & Sportsbooks',
   description:
-    'A guide to crypto gambling in Canada. How Bitcoin and other cryptocurrencies work at online casinos and sportsbooks, plus the top crypto-friendly operators.',
+    'A guide to crypto gambling in Canada — how Bitcoin and other cryptocurrencies work at online casinos and sportsbooks, plus top crypto-friendly operators.',
   alternates: { canonical: '/crypto' },
 };
 

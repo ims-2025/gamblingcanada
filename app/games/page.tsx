@@ -6,7 +6,7 @@ import { GAMES } from '@/lib/content';
 export const metadata: Metadata = {
   title: 'Casino Games Guides — Slots, Blackjack, Roulette & More',
   description:
-    'Learn how to play and win at Canada’s most popular casino games. Rules, odds, RTP and strategy for slots, blackjack, roulette, poker, video poker and bingo.',
+    'Learn how to play and win at Canada’s most popular casino games — rules, odds, RTP and strategy for slots, blackjack, roulette, poker and bingo.',
   alternates: { canonical: '/games' },
 };
 
@@ -24,6 +24,7 @@ export default function GamesPage() {
               strategy you need to play smarter.
             </p>
           </div>
+          <h2 style={{ marginBottom: 16 }}>Choose a game guide</h2>
           <div className="grid grid-3">
             {GAMES.map((g) => (
               <Link key={g.slug} href={`/games/${g.slug}`} className="game-card">

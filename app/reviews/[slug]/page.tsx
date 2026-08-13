@@ -6,7 +6,7 @@ import JsonLd from '@/components/JsonLd';
 import LogoImage from '@/components/LogoImage';
 import { StarRating, Check } from '@/components/icons';
 import { OPERATORS, getOperator } from '@/lib/operators';
-import { SITE } from '@/lib/site';
+import { SITE, YEAR } from '@/lib/site';
 
 export function generateStaticParams() {
   return OPERATORS.map((o) => ({ slug: o.slug }));
@@ -17,8 +17,8 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
   if (!op) return {};
   const typeLabel = op.type === 'sportsbook' ? 'Sportsbook' : op.type === 'poker' ? 'Poker' : 'Casino';
   return {
-    title: `${op.name} Review 2025 — Bonus, Rating & Verdict`,
-    description: `Our expert ${op.name} review for Canadian players: ${op.bonus}. Rated ${op.rating}/5 for licensing, ${typeLabel.toLowerCase()} quality, banking and support.`,
+    title: `${op.name} Review ${YEAR} — Bonus, Rating & Verdict`,
+    description: `${op.name} review: ${op.bonus}. Rated ${op.rating}/5 by our independent Canadian gambling experts.`,
     alternates: { canonical: `/reviews/${op.slug}` },
   };
 }

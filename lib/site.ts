@@ -11,6 +11,11 @@ export const SITE = {
   established: 2013,
 } as const;
 
+// Current year, resolved at build time so year-stamped titles/headings never go
+// stale. Because the site is rebuilt regularly (incl. the daily news task), this
+// stays correct automatically — no more hard-coded "2025" to chase every January.
+export const YEAR: number = new Date().getFullYear();
+
 export const NAV: { label: string; href: string; children?: { label: string; href: string }[] }[] = [
   { label: 'Online Casinos', href: '/casino' },
   {

@@ -6,7 +6,7 @@ import { GAMES } from '@/lib/content';
 export const metadata: Metadata = {
   title: 'Top 10 Most Searched Online Casino Games in Canada 2026',
   description:
-    'The most popular online casino games among Canadian players in 2026 — from slots and blackjack to roulette, poker and live dealer, with RTP and where to play.',
+    'The most popular online casino games among Canadian players in 2026 — from slots and blackjack to roulette and poker, with RTP and where to play.',
   alternates: { canonical: '/top-10-most-searched-online-casino-games-in-canada' },
 };
 

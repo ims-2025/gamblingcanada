@@ -3,6 +3,7 @@ import { SITE } from '@/lib/site';
 import { OPERATORS } from '@/lib/operators';
 import { GAMES } from '@/lib/content';
 import { getAllNews } from '@/lib/news';
+import { PILLARS } from '@/lib/pillars';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = SITE.url;
@@ -46,6 +47,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.6,
   }));
 
+  const pillarPages = PILLARS.map((p) => ({
+    url: `${base}/${p.slug}`,
+    lastModified: new Date(p.updated),
+    changeFrequency: 'weekly' as const,
+    priority: 0.8,
+  }));
+
   const newsPages = getAllNews().map((n) => ({
     url: `${base}/news/${n.slug}`,
     lastModified: new Date(n.date),
@@ -53,5 +61,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.6,
   }));
 
-  return [...staticPages, ...reviewPages, ...gamePages, ...newsPages];
+  return [...staticPages, ...pillarPages, ...reviewPages, ...gamePages, ...newsPages];
 }

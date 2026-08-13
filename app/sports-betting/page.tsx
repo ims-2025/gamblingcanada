@@ -3,9 +3,10 @@ import Link from 'next/link';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import OperatorCard from '@/components/OperatorCard';
 import { SPORTSBOOKS, topByRating } from '@/lib/operators';
+import { YEAR } from '@/lib/site';
 
 export const metadata: Metadata = {
-  title: 'Best Real Money Online Sportsbooks in Canada 2025',
+  title: `Best Real Money Online Sportsbooks in Canada ${YEAR}`,
   description:
     'Compare the best online sportsbooks in Canada for NHL, NFL, NBA and soccer betting. Rated for odds, markets, live betting, bonuses and payout speed.',
   alternates: { canonical: '/sports-betting' },
@@ -33,12 +34,15 @@ export default function SportsBettingPage() {
             <p className="lead text-muted">
               Online sports betting is more popular than ever in Canada. Since single-event wagering became legal
               in 2021, it’s easier than ever to bet on hockey, football, basketball and soccer. Here are our
-              top-rated Canadian sportsbooks for 2025.
+              top-rated Canadian sportsbooks for {YEAR}.
             </p>
           </div>
           <div className="flex gap-2 wrap mb-2">
             <Link href="/sports-betting/ontario" className="badge badge-blue">Ontario betting →</Link>
             <Link href="/sports-betting/alberta" className="badge badge-blue">Alberta betting →</Link>
+            <Link href="/how-to-bet-on-hockey" className="badge badge-blue">How to bet on hockey →</Link>
+            <Link href="/nfl-betting-canada" className="badge badge-blue">NFL betting →</Link>
+            <Link href="/sports-betting-bonuses-canada" className="badge badge-blue">Betting bonuses →</Link>
             <Link href="/sports-betting-understanding-the-basics" className="badge badge-gray">Betting basics →</Link>
           </div>
           <div className="op-list">

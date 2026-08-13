@@ -23,6 +23,10 @@ export const GAME_GUIDES: Record<string, GameGuide> = {
       "<p>If you want longer sessions and frequent small wins, look for low-volatility slots with an RTP of 96% or higher. If you're chasing a big score and can accept longer dry spells, high-volatility games and progressive jackpots are the draw. Progressive jackpots like Mega Moolah and Mega Fortune pool a small slice of every bet across many casinos into a single prize that can reach millions — but they carry a lower base RTP, so treat them as a long shot rather than a strategy.</p>" +
       "<h3>Tips for playing slots responsibly</h3>" +
       "<p>Slots are designed as entertainment, not income. Set a budget before you start, choose a stake that lets your bankroll last, and use the deposit limits and time-out tools every licensed casino provides. Check the RTP in the game's info panel before you play — it's published for a reason. And remember that no betting system changes the odds of an RNG game.</p>" +
+      "<h2>Bonus features and how they pay</h2>" +
+      "<p>Modern slots are built around bonus features, and knowing them helps you pick games you'll actually enjoy. <strong>Free spins</strong> are the most common — triggered by scatter symbols, they let you spin without staking, often with a multiplier attached. <strong>Multipliers</strong> boost a win by 2x, 3x or more. <strong>Cascading (or tumbling) reels</strong> remove winning symbols and drop new ones in, chaining several wins from one spin. The <strong>Megaways</strong> engine changes how many symbols land on each reel every spin, creating up to 117,649 ways to win. Some slots also sell a 'bonus buy' that pays you straight into the free-spins round — fun, but it burns through a bankroll far faster, so treat it with caution.</p>" +
+      "<h2>Slot myths that cost players money</h2>" +
+      "<p>A few persistent myths lead players astray. A machine is never 'due' for a win — the RNG has no memory, so a long dry spell doesn't make the next spin any more likely to hit. The time of day makes no difference to online results. Your bet size doesn't change a slot's RTP, only the size of potential wins. And 'hot' or 'cold' streaks are just variance seen in hindsight, not a pattern you can ride. The only real levers you control are choosing higher-RTP games, matching volatility to your goal, and managing your bankroll.</p>" +
       "<h2>Where to play slots in Canada</h2>" +
       "<p>The best slots experience comes down to library size, software providers (NetEnt, Play'n GO, Pragmatic Play and Big Time Gaming are among the leaders), and fast CAD withdrawals. Many Canadians now play primarily on their phones — see our guide to the <a href='/best-mobile-casinos-in-canada'>best mobile casinos in Canada</a>. For the full picture, compare our top-rated <a href='/casino'>online casinos</a> below, then branch out to other <a href='/games'>game guides</a> once you've found your favourites.</p>",
     faq: [
@@ -48,6 +52,10 @@ export const GAME_GUIDES: Record<string, GameGuide> = {
       "<p>The insurance bet, offered when the dealer shows an ace, carries a high house edge and basic strategy says to decline it. The same goes for most flashy side bets — they're fun but expensive over time. Stick to the main game where your edge is best.</p>" +
       "<h2>Live dealer blackjack</h2>" +
       "<p>Live dealer blackjack streams a real croupier to your screen and has become hugely popular with Canadian players who want the authentic table feel online. The rules and strategy are identical; you just get the atmosphere of a real table. Most top casinos now run extensive live-casino floors.</p>" +
+      "<h2>Blackjack variants worth knowing</h2>" +
+      "<p>Not all blackjack is created equal — the rules printed on the table quietly change your odds. Look for games that pay <strong>3:2 for a blackjack</strong> and avoid 6:5 tables, which nearly triple the house edge. Whether the dealer hits or stands on a soft 17 matters too (standing is better for you). Popular online variants include <strong>Classic/European</strong> (the dealer takes one card until players finish), <strong>Atlantic City</strong> (late surrender and re-splitting allowed), <strong>Vegas Strip</strong>, and <strong>single- and double-deck</strong> games, which carry a slightly lower house edge than eight-deck shoes. Read the rules panel before you sit down.</p>" +
+      "<h2>Does card counting work online?</h2>" +
+      "<p>In short, not on standard online blackjack. RNG blackjack reshuffles the virtual deck after every hand, so there is no running count to track. Live dealer tables use real cards but typically use continuous shuffling machines or reshuffle well before the shoe runs low, which neutralises counting. Rather than chase a system that doesn't apply online, focus on flawless basic strategy and sensible bet sizing — flat-betting a modest unit of around 1–2% of your session bankroll keeps variance manageable and your edge intact.</p>" +
       "<h2>Where to play blackjack in Canada</h2>" +
       "<p>Look for casinos with a range of blackjack variants, generous table limits and a strong live-casino section. Once you've got basic strategy down, you might also enjoy the similar low-house-edge appeal of <a href='/games/video-poker'>video poker</a>, or the pure chance of <a href='/games/roulette'>roulette</a>. Compare our top-rated <a href='/casino'>online casinos</a> below, and browse all our <a href='/games'>game guides</a> to keep learning.</p>",
     faq: [
@@ -71,6 +79,17 @@ export const GAME_GUIDES: Record<string, GameGuide> = {
       "<p>You'll see plenty of roulette 'systems' — the Martingale, Fibonacci, D'Alembert and others. They can shape how a session feels, but it's important to understand that <strong>no system changes the underlying odds</strong>. Each spin is independent, and the house edge is fixed by the wheel you choose. Systems that require doubling after losses can also hit the table limit or drain a bankroll quickly, so use them for structure and entertainment, not as a way to beat the game.</p>" +
       "<h2>Live dealer roulette</h2>" +
       "<p>Live roulette streams a real wheel and croupier to your device and is a favourite in Canadian live-casino lobbies. It combines the trust of a physical wheel with the convenience of online play, and often includes immersive camera angles and statistics.</p>" +
+      "<h2>Roulette payouts at a glance</h2>" +
+      "<table><thead><tr><th>Bet</th><th>Pays</th><th>Win chance (European)</th></tr></thead><tbody>" +
+      "<tr><td>Straight-up (single number)</td><td>35:1</td><td>2.7%</td></tr>" +
+      "<tr><td>Split (two numbers)</td><td>17:1</td><td>5.4%</td></tr>" +
+      "<tr><td>Corner (four numbers)</td><td>8:1</td><td>10.8%</td></tr>" +
+      "<tr><td>Dozen / Column</td><td>2:1</td><td>32.4%</td></tr>" +
+      "<tr><td>Red/Black, Odd/Even, High/Low</td><td>1:1</td><td>48.6%</td></tr>" +
+      "</tbody></table>" +
+      "<p>Even-money bets give you the smoothest ride; single-number bets deliver the big 35:1 thrill but land rarely. Every bet carries the same house edge on a given wheel, so choose by the experience you want rather than chasing a 'better' bet.</p>" +
+      "<h2>Managing your roulette session</h2>" +
+      "<p>Because the house edge is fixed, smart roulette is about session management, not system-chasing. Decide a budget and a stop-loss before you start, favour European or French wheels, and mix lower-variance even-money bets with the occasional inside bet for excitement. Use the game's built-in loss and time limits, and withdraw winnings rather than rolling everything back onto the wheel.</p>" +
       "<h2>Where to play roulette in Canada</h2>" +
       "<p>Prioritise casinos that offer European and French roulette (not just American), a solid live-casino section and CAD banking. If you enjoy roulette's mix of simple bets and big-number thrills, you may also like <a href='/games/slots'>online slots</a>. Compare our top-rated <a href='/casino'>online casinos</a> below, read our independent <a href='/reviews'>operator reviews</a>, and explore more <a href='/games'>game guides</a>.</p>",
     faq: [
@@ -101,6 +120,12 @@ export const GAME_GUIDES: Record<string, GameGuide> = {
       "</ul>" +
       "<h2>Why poker keeps growing in Canada</h2>" +
       "<p>Online poker has seen steady growth in Canada, driven by regulated Ontario rooms, soft cash games and a busy tournament calendar. Unlike RNG casino games, poker rewards study and improvement, which keeps players engaged for the long term.</p>" +
+      "<h2>Poker hand rankings</h2>" +
+      "<p>Every format shares the same hierarchy, strongest first: royal flush, straight flush, four of a kind, full house, flush, straight, three of a kind, two pair, one pair, and high card. Committing these to memory is the very first step before you play a hand for real money.</p>" +
+      "<h2>Cash games vs tournaments — which suits you?</h2>" +
+      "<p><strong>Cash games</strong> use real-money chips at fixed stakes; you can join and cash out whenever you like, and the blinds never rise. They reward steady, disciplined play. <strong>Tournaments</strong> charge one buy-in for a shot at a large prize pool, with blinds climbing until one player holds all the chips — bigger upside for a small buy-in, but higher variance and longer sessions. Beginners often start with low-stakes cash games or small Sit &amp; Gos to learn without big swings.</p>" +
+      "<h2>Understanding rake and rakeback</h2>" +
+      "<p>Poker rooms make their money by taking a small <strong>rake</strong> from each cash-game pot or as a tournament fee. Many rooms return a portion as <strong>rakeback</strong> or loyalty rewards, which for a regular player is real, ongoing value — often worth more over a year than any one-time welcome bonus. When you compare rooms, weigh the rake and rewards, not just the sign-up offer.</p>" +
       "<h2>Where to play poker in Canada</h2>" +
       "<p>Look for rooms with good traffic (so games are always running), reliable software and fair rake. If you enjoy the skill element of poker, you may also like <a href='/games/video-poker'>video poker</a>, which rewards correct strategy against the house. Explore our <a href='/reviews'>reviews</a> and more <a href='/games'>game guides</a> to go deeper.</p>",
     faq: [
@@ -131,6 +156,10 @@ export const GAME_GUIDES: Record<string, GameGuide> = {
       "</ul>" +
       "<h2>Popular variants</h2>" +
       "<p>Beyond Jacks or Better, you'll find Deuces Wild (where all twos are wild), Bonus Poker and Double Bonus, each with its own paytable and optimal strategy. Learn one variant well rather than jumping between them.</p>" +
+      "<h2>Video poker vs slots and table poker</h2>" +
+      "<p>Video poker sits neatly between slots and table poker. Like slots, it's a solo game against a paytable, with instant results and no opponents to read. Like poker, your decisions matter — the cards you hold change your expected return. Compared with slots, a full-pay machine played correctly returns more of your money over time; compared with table poker, there's no bluffing or reading opponents, just you and the math. If you enjoy the strategy of poker but not the head-to-head pressure, video poker is an ideal middle ground.</p>" +
+      "<h2>Progressive video poker and bankroll</h2>" +
+      "<p>Some machines add a progressive jackpot, usually for the royal flush, that grows until someone hits it. When that jackpot is large enough it can tip the game's expected return in the player's favour — but chasing it requires a bigger bankroll and always betting max coins, since a sub-max bet slashes the royal-flush payout. Whatever variant you play, size your bankroll for the swings: even a 99.5% RTP game has losing streaks, so bring enough to ride them out and always bet the coins your strategy assumes.</p>" +
       "<h2>Where to play video poker in Canada</h2>" +
       "<p>Look for casinos offering full-pay machines and a range of variants. If you like the skill-plus-strategy appeal, you'll likely enjoy <a href='/games/blackjack'>blackjack</a> and table <a href='/games/poker'>poker</a> too. Compare our top-rated <a href='/casino'>online casinos</a> and read our <a href='/reviews'>reviews</a> to find the best places to play.</p>",
     faq: [
@@ -158,6 +187,16 @@ export const GAME_GUIDES: Record<string, GameGuide> = {
       "<li><strong>Look for jackpot games</strong> for the big-win potential, and off-peak sessions for value.</li>" +
       "<li><strong>Use the bonuses</strong> many rooms offer on first deposit, but read the wagering terms first.</li>" +
       "<li><strong>Set a budget.</strong> Bingo is cheap fun — keep it that way with deposit limits.</li>" +
+      "</ul>" +
+      "<h2>Bingo bonuses and wagering explained</h2>" +
+      "<p>Most bingo sites offer a first-deposit bonus, often split into 'bingo bonus' funds and 'games' (slots) funds. The detail that matters is the <strong>wagering requirement</strong> — how many times you must play through the bonus before you can withdraw it. Bingo wagering is often lower than slots wagering, but always read the terms: check the playthrough, which games count toward it, and any maximum withdrawal on bonus winnings. A smaller bonus with fair terms beats a big one you can never clear.</p>" +
+      "<h2>Bingo lingo every player should know</h2>" +
+      "<ul>" +
+      "<li><strong>Daub:</strong> marking a called number (done automatically online).</li>" +
+      "<li><strong>Full house:</strong> completing every number on your ticket — the top prize.</li>" +
+      "<li><strong>1TG / 2TG:</strong> 'one to go' or 'two to go' — you need one or two more numbers to win.</li>" +
+      "<li><strong>CM:</strong> the chat moderator who hosts the room and runs side games.</li>" +
+      "<li><strong>Wild / roll-on:</strong> extra calls or bonus rounds some rooms add for bigger prizes.</li>" +
       "</ul>" +
       "<h2>Where to play bingo in Canada</h2>" +
       "<p>The best bingo sites combine busy rooms (so games run around the clock), a good range of formats, fair jackpots and CAD banking. Since bingo is a favourite on the go, our <a href='/best-mobile-casinos-in-canada'>best mobile casinos</a> guide is worth a look. If you enjoy the low-stakes, luck-based fun of bingo, you might also like <a href='/games/slots'>online slots</a>. Compare our top-rated <a href='/casino'>online casinos</a> and browse more <a href='/games'>game guides</a> to find your room.</p>",

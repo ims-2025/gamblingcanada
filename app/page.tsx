@@ -3,13 +3,13 @@ import type { Metadata } from 'next';
 import OperatorCard from '@/components/OperatorCard';
 import JsonLd from '@/components/JsonLd';
 import { Check, ShieldCheck, Scale, Users } from '@/components/icons';
-import { SITE } from '@/lib/site';
+import { SITE, YEAR } from '@/lib/site';
 import { CASINOS, SPORTSBOOKS, topByRating } from '@/lib/operators';
 import { RANKING_CRITERIA, HOME_FAQ, GAMES, EDITORS } from '@/lib/content';
 import { getAllNews } from '@/lib/news';
 
 export const metadata: Metadata = {
-  title: `${SITE.name} — Sportsbooks & Online Casinos Canada 2025`,
+  title: `${SITE.name} — Sportsbooks & Online Casinos Canada ${YEAR}`,
   description: SITE.description,
   alternates: { canonical: '/' },
 };
@@ -37,7 +37,7 @@ export default function HomePage() {
       <section className="hero">
         <div className="container hero-inner">
           <div className="eyebrow">Independent • Est. {SITE.established} • 19+</div>
-          <h1>Top Legal Online Betting Sites for Canada 2025</h1>
+          <h1>Top Legal Online Betting Sites for Canada {YEAR}</h1>
           <p className="lead">
             Expert-reviewed online casinos and sportsbooks for Canadian players. Every operator is checked for
             licensing, payout speed, game quality and support before it makes our list — so you can play safe,

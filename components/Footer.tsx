@@ -46,6 +46,9 @@ export default function Footer() {
           <h4>Explore</h4>
           <Link href="/casino">Online Casinos</Link>
           <Link href="/sports-betting">Sports Betting</Link>
+          <Link href="/casino-bonuses">Casino Bonuses</Link>
+          <Link href="/online-gambling-by-province">Gambling by Province</Link>
+          <Link href="/is-online-gambling-legal-in-canada">Is It Legal?</Link>
           <Link href="/crypto">Crypto Gambling</Link>
           <Link href="/news">News</Link>
           <Link href="/about">About</Link>

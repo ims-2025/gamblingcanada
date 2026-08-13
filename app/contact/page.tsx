@@ -19,6 +19,7 @@ export default function ContactPage() {
             Questions, feedback or a correction on a review? We’d love to hear from you. Use the form below and
             our editorial team will respond.
           </p>
+          <h2 style={{ marginBottom: 16 }}>Send us a message</h2>
           <form className="card" style={{ padding: 24, maxWidth: 560 }} aria-label="Contact form">
             <div style={{ display: 'grid', gap: 14 }}>
               <label>

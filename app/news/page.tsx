@@ -24,6 +24,7 @@ export default function NewsPage() {
               Regulation, market data and industry trends — reported by our editorial team.
             </p>
           </div>
+          <h2 style={{ marginBottom: 16 }}>Recent headlines</h2>
           <div className="grid grid-3">
             {news.map((n) => (
               <article key={n.slug} className="news-card">
